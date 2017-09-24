@@ -1,63 +1,37 @@
 <html>
+<body id="body">
 
-
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/457807/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458217/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458323/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458430/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458510/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458548/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458680/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458842/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/459810/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/460425/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/460600/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/462439/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/462468/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/464582/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/464938/1.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/465002/1.0">
-
-<hr>
-
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/457807/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458217/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458323/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458430/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458510/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458548/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458680/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458842/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/459810/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/460425/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/460600/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/462439/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/462468/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/464582/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/464938/2.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/465002/2.0">
-
-
-<hr>
-
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/457807/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458217/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458323/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458430/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458510/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458548/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458680/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/458842/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/459810/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/460425/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/460600/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/462439/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/462468/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/464582/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/464938/3.0">
-<img src="https://static-cdn.jtvnw.net/emoticons/v1/465002/3.0">
-
-<hr>
-
+</body>
+<script>
+    var ids = [457807, 
+                458217,
+                458323,
+                458430,
+                458510,
+                458548,
+                458680,
+                458842,
+                459810,
+                460425,
+                460600,
+                462439, 
+                462468,
+                464582,
+                464938,
+                465002,
+                471441,
+                474127
+                ];
+    var body = document.getElementById("body");
+    for(var quality = 1; quality <= 3; ++quality) {
+        for(var i = 0; i < ids.length; ++i) {
+            var img = document.createElement("img");
+            img.setAttribute("src", "https://static-cdn.jtvnw.net/emoticons/v1/" + ids[i] + "/" + quality + ".0"); 
+            body.appendChild(img);
+        }
+        body.appendChild(document.createElement("hr"));
+    }
+    
+</script>
 
 </html>
